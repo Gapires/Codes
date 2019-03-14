@@ -1,0 +1,187 @@
+﻿@import "_variaveis.scss";
+
+#pg-body {
+  clear: both;
+  margin-bottom: 10px;
+  padding: 60px 10px;
+
+  .dfwp-column {
+    .dfwp-list {
+      width: 100%;
+      justify-content: center;
+      padding: 0 40px;
+    }
+
+    .dfwp-list li {
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+      padding: 20px 1%;
+      width: 13%;
+    }
+
+    @media (max-width: 1100px){
+      .dfwp-list{
+        padding: 0;
+      }
+    }
+  }
+}
+
+.search-Input-Field {
+  float: right;
+  width: 250px;
+  border-radius: 2px;
+  height: 22px;
+  margin: 5px 20px;
+}
+
+@media (max-width: 550px) {
+  .search-Input-Field{
+    width: 200px;
+  }
+}
+
+.back-button {
+  margin: 0;
+  margin-top: 5px;
+  padding-right: 10px;
+  float: right;
+
+  &.bottom {
+    margin-bottom: 10px;
+  }
+}
+
+#ia-main div p {
+  display: none;
+}
+
+#ia-main {
+  padding-top: 0;
+}
+
+#ia-header-2 {
+  display: none;
+}
+
+.ms-core-pageTitle, #DeltaPlaceHolderPageTitleInTitleArea {
+  width: 100%;
+}
+
+#ia-page-title {
+  float: left;
+  clear: left;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/*Remoção do estilo dos itens li de listas*/
+#list-item-title li,
+.dfwp-list li {
+  list-style-type: none;
+}
+/*----------------------------*/
+
+/*Estilo do formulário de edição dos links de resumo*/
+.ms-formfieldcontainer {
+  border: 1px solid #c6c6c6;
+  padding: 5px;
+  padding: 5px 5px 20px;
+}
+/*----------------------------*/
+
+/*Remoção do placeholder do cabeçalho da página*/
+#DeltaPlaceHolderPageDescription {
+  display: none;
+}
+/*----------------------------*/
+
+/*Aplicação do tamanho do campo "Título" no formulário de edição dos links de resumo*/
+#links-internal-name input {
+  width: calc(100% - 12px);
+}
+/*----------------------------*/
+
+/*Alinhamento da imagem e título da página no cabeçalho da página*/
+#list-item-title {
+  padding: 10px 0 0;
+  padding: 0;
+}
+
+.item-title-area {
+  float: left;
+  padding-right: 20px;
+  font-family: $SegoeUI;
+  color: #666666;
+  font-size: 2em;
+}
+
+#item-image img {
+  position: relative;
+  bottom: 5px;
+}
+/*----------------------------*/
+
+/*Estilo dos títulos dos links de resumo*/
+.title-summary-links {
+  font-family: $SegoeUI;
+  color: #666666;
+  white-space: normal;
+}
+/*----------------------------*/
+
+/*Aplicação do comportamento responsivo nos links de resumo */
+@media (max-width: 1160px) {
+  #pg-body {
+    .dfwp-column {
+      .dfwp-list {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  #pg-body {
+    .dfwp-column {
+      .dfwp-list li {
+        width: 15%;
+        padding: 0px 5px 35px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  #pg-body {
+    .dfwp-column {
+      .dfwp-list li {
+        width: 17%;
+        padding: 0px 5px 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #pg-body {
+    .dfwp-column {
+      .dfwp-list li {
+        width: 30%;
+        padding: 0px 5px 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  #pg-body {
+    .dfwp-column {
+      .dfwp-list li {
+        width: 45%;
+        padding: 0px 5px 40px;
+      }
+    }
+  }
+}

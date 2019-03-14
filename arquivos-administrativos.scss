@@ -1,0 +1,53 @@
+﻿body {
+  font-family: Segoe UI;
+
+
+  .border {
+    border-bottom: 1px solid #828282;
+    margin: 10px 14px;
+  }
+
+  .section-header, .form-title {
+    background-color: #153a6e;
+    font-size: 1.5em;
+    padding: 2px 19px;
+    margin-bottom: 20px;
+  }
+
+  .repeater-title, .repeater > .controls {
+    background-color: #FFFFFF;
+    font-weight: 700;
+    color: #333;
+  }
+
+  .repeater-item {
+    border-color: #FFFFFF;
+  }
+
+  .send-button, .send-button:hover, .send-button:focus, .send-button:active, .send-button:active:hover, .send-button:active:focus {
+    background-color: #153a6e;
+    border-color: #153a6e;
+    color: white;
+  }
+
+  .cancel-button, .cancel-button:hover, .cancel-button:focus, .cancel-button:active, .cancel-button:active:hover, .cancel-button:active:focus {
+    background-color: #9a999e;
+    border-color: #9a999e;
+    color: black;
+  }
+
+  .cancel-button {
+    float: left !important;
+    margin-left: 0 !important;
+  }
+
+  .advice {
+    font-size: 0.9em;
+    margin-left: 124px;
+  }
+
+  .version {
+    float: right;
+    margin-top: 50px;
+  }
+}

@@ -1,0 +1,105 @@
+﻿@import "_variaveis.scss";
+
+body {
+  #ia-pageTitle {
+    margin-bottom: -30px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+
+      &-logo {
+        position: relative;
+        top: 20px;
+      }
+
+      &-text {
+        color: $dark-gray;
+        font-weight: 700;
+        font-size: 0.75em;
+        margin-left: 10px;
+      }
+    }
+
+    &__control {
+      font-size: 16px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+
+      &-button {
+        display: flex;
+        align-items: center;
+      }
+
+      &-plus_icon {
+        margin-right: 6px;
+        height: 20px;
+      }
+
+      &-link {
+        color: $dark-gray !important;
+        display: flex;
+        align-items: center;
+        position: relative;
+        right: 273px;
+        top: 57px;
+        z-index: 100;
+      }
+
+      &-filter {
+        margin-left: 25px;
+      }
+
+      &-back_button {
+        margin-left: 20px;
+        cursor: pointer;
+      }
+
+      @media(max-width: 485px) {
+        &-link {
+          right: 200px;
+        }
+      }
+    }
+  }
+
+
+  .container {
+
+    #grid-container {
+      height: 550px;
+    }
+
+    .dx-header-row {
+      background-color: rgb(21, 58, 110);
+      color: white;
+    }
+
+    .dx-header-filter {
+      color: white;
+    }
+  }
+
+
+  @media(max-width: 485px) {
+    .dx-datagrid-search-panel {
+      width: 180px !important;
+    }
+  }
+
+  @media(max-width: 435px) {
+    #ia-pageTitle {
+      margin-bottom: 5px;
+    }
+
+    .header__control-link {
+      position: absolute;
+      right: 15px;
+      top: 225px;
+    }
+  }
+}
